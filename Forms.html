@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>FormPage</title>
+    </head>
+
+    <body>
+        <h1>ΑΠΟΣΤΟΛΗ ΔΕΔΟΜΕΝΩΝ</h1>
+        <fieldset>
+            <fieldset>
+                <form action="/sendData" method="GET">
+                    <label for="txtFirstName">Όνομα : </label>
+                    <input type="text" id="txtFirstName"  placeholder="Π.χ Γιάννης" required name="firstName" minlength="3" maxlength="20">
+                    <br>
+                    <label for="txtLastName">Επώνυμο : </label>
+                    <input type="text" id="txtLastName"placeholder="Π.χ Ρούσσος" required name="lastName" minlength="3" maxlength="20">
+                    <br>
+                    <label for="txtComments">Σχόλια : </label>
+                    <textarea type="text" id="txtComments" name="comments" rows="4" cols="20" placeholder="Τα σχόλια σας..."></textarea>
+                    <br>                
+                    <label for="txtPaswword"> Κωδικός : </label>
+                    <input type="password" id="txtPaswword"a autocomplete="on" minlength="3" maxlength="10" name="Paswword" pattern="[a-zA-z0-9]{4-10}" required >
+                    </label>
+                    <br>
+                    <label for="txtEmail">Email : </label>
+                    <input type="email" name="email" id="txtEmail" placeholder="ex. smaniadis459@gmail.com" required>
+                    <br>
+                </fieldset>    
+            <fieldset>
+                <legend>        
+                    <h3>Card Use :</h3>
+                </legend>    
+                    <label for="checkBox1">MasterCard : </label>
+                    <input type="checkbox" id="checkBox1" name="chBox1" value="chBox1-on">
+                    <br>
+                    <label for="checkBox2">VisaCard : </label>
+                    <input type="checkbox" id="VisaCard" name="chBox2" value="chBox2-on">
+                    <br>
+                    <label for="checkBox3">PrePaidCard : </label>
+                    <input type="checkbox" id="checkBox3" name="chBox3" value="chBox3">
+            </fieldset>    
+
+            <fieldset>
+                <legend>
+                     <h3>Οικογενειακή Κατάσταση :</h3>
+                </legend>     
+            
+
+         
+            <label for="chFamilyBox">Παντρεμένος :</label>
+            <input type="radio" id="chFamilyBox" name="familyChoice" value="mariageOn">
+            <br>
+            <label for="chFamilyBox2">Άγαμος :</label>
+            <input type="radio" id="charset" name="familyChoice" value="mariageOff">
+            <br>
+            </h3>
+
+            <br>
+            <label for="chCountry">Choose Country :</label>
+            <select id="chCountry" name="COUNTRY" multiple size="3">
+                <optgroup label="country">
+                    <option value="Gr" selected>Greece</option>
+                    <option value="Eng" >English</option>
+                    <option value="Esp" >Spanish</option>
+                    <option value="trk" >Turkish</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <input type="image" src="/360_F_203070403_2EjolvaClJ0S1rCMbqO03peCS0yZdTGW.jpg" width="50" height="50" value="Αποστολή">
+            <input  src="/clean-icon-2.jpg" width="45" weight="45" type="reset" value="Καθαρισμός">
+            </br>
+        </form>
+    </fieldset>    
+    </body>
+</html>
